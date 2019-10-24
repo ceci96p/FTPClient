@@ -7,26 +7,18 @@ for example:
 
 ```java CSftp 127.0.0.1 21```
 
-The client accepts to execute commands like:
+The client can send commands to the server like:
 
-Username: ```USER cs317```
+Username: ```USER (any username)```
 
-Change working directory: ```CWD (directory name)```
+Password: ```PW (any password)```
 
-Change to parent directory: ```CDUP```
+Retrieve file: ```GET (file name)```
 
-Name list of current working directory: ```NLST```
+Request set of features/extensions: ```FEATURES```
+
+Change working directory: ```CD (directory name)```
+
+Retrieve list of files: ```DIR```
 
 Quit conection: ```QUIT```
-
-File transfer type: ```TYPE (a or i)``` - ascii or binary type only
-
-Transmission mode: ```MODE (s)``` - stream mode only
-
-File structure: ```STRU (f)``` - file structure only
-
-Retrieve file: ```RETR (file name)```
-
-Passive mode: ```PASV```
-
-
